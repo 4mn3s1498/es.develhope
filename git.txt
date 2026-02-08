@@ -1,0 +1,16 @@
+git clone=clona cartelle
+git status=visualizza lo stato della tua code base
+cd=cambi cartella
+ls=vedi dove sei
+cntrl+s 
+origin=remoto
+git checkout -b=crea new branch
+git push=aggiorna locale al remoto
+git pull=aggiorna qualcosa (?)
+git commit -m=creare un comiit con il nome tra " "
+got log=elenco dei commit
+
+
+
+  git config --global user.email "ele24980@gmail.com"
+  git config --global user.name "4mn3s1498"
