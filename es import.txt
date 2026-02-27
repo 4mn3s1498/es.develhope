@@ -1,0 +1,331 @@
+Non ti scrivo le soluzioni.
+Ti spiego COME ragionare per ogni esercizio. Se capisci il ragionamento, li sai fare tutti.
+
+🔥 ESERCIZIO 1 – Oggetto annidato
+Cosa devi fare mentalmente:
+
+Accedere alle proprietà con la dot notation:
+
+persona.nome
+
+persona.indirizzo.citta
+
+persona.occupazione.studente
+
+Costruire una stringa con concatenazione.
+
+Stampare la frase finale.
+
+⚠️ Attenzione: l’età è una stringa "24".
+
+🔥 ESERCIZIO 2 – Sconto
+
+Formula matematica:
+
+prezzo finale = prezzo - (prezzo * sconto / 100)
+
+
+Poi:
+
+Usa toFixed(2) per avere 2 decimali
+
+Stampa con template string o concatenazione
+
+🔥 ESERCIZIO 3 – Funzione maggiorenne
+
+Ragionamento:
+
+if (eta >= 18)
+   maggiorenne
+else
+   minorenne
+
+
+La funzione deve:
+
+ricevere solo l’età
+
+restituire un messaggio
+
+poi tu costruisci la frase completa usando il nome
+
+🔥 ESERCIZIO 4 – IVA + controlli
+
+Converti eventuali stringhe in numeri:
+
+Number(imponibile)
+
+
+Controlla con:
+
+isNaN(valore)
+
+
+Formula:
+
+totale = imponibile + (imponibile * ivaPercento / 100)
+
+🔥 ESERCIZIO 5 – Login
+
+Struttura mentale:
+
+if (inputUser === account.username && inputPass === account.password)
+   accesso
+else
+   account.tentativi++
+
+
+Poi stampi sempre l’oggetto.
+
+🔥 ESERCIZIO 6 – Partita
+
+Per la probabilità 50% usa:
+
+Math.random()
+
+
+Se il numero è < 0.5 segna squadra1
+Altrimenti squadra2.
+
+Ripeti 3 volte con un ciclo for.
+
+Poi confronta i punteggi.
+
+🔥 ESERCIZIO 7 – POP BANG
+
+Ciclo da 1 a 25.
+
+Ordine corretto dei controlli:
+
+Prima controlla multiplo di 4 e 6
+
+Poi multiplo di 4
+
+Poi multiplo di 6
+
+Usa % (modulo).
+
+🔥 ESERCIZIO 8 – Carrello
+
+Somma:
+
+carrello.prodotto1.prezzo + ...
+
+
+Oppure usa un for...in.
+
+Poi applica sconto 15% come prima.
+
+🔥 ESERCIZIO 9 – Dado truccato
+
+Usa:
+
+let random = Math.random();
+
+
+Logica:
+
+if (random < 0.6) → Successo
+else if (random < 0.9) → Fallimento
+else → Critico
+
+🔥 ESERCIZIO 10 – Menu
+
+Controllo:
+
+Se giorno non esiste → "Giorno non valido"
+
+Se giorno === "venerdi" → "chiuso"
+
+Altrimenti costruisci stringa con primo, secondo, contorno
+
+🎯 Come studiare ora (strategia rapida)
+
+Fai esercizio 1–3
+
+Se ti blocchi, ragiona:
+
+Sto accedendo bene alle proprietà?
+
+Sto usando return?
+
+Sto chiamando la funzione?
+
+Se vuoi fare bene con poco tempo:
+
+👉 Parti dal 3, 7 e 9 (allenano logica pura).
+👉 Poi fai 1 e 5 (allenano oggetti).
+
+Scrivimi quale vuoi fare per primo e lo facciamo insieme passo passo 🔥
+
+Preferisco questa risposta
+ChatGPT
+Risposta 2
+
+Ok 💪 ti faccio una guida strategica super compatta per affrontarli senza andare in panico.
+Non ti scrivo le soluzioni complete, ma ti dico come ragionare su ognuno.
+
+🔥 ESERCIZIO 1 – Oggetto annidato
+
+👉 Devi:
+
+Accedere alle proprietà con .
+
+Anche quelle dentro oggetti dentro oggetti
+
+Esempio mentale:
+
+persona.nome
+persona.indirizzo.citta
+persona.occupazione.studente
+
+
+Poi costruisci una stringa unica concatenando tutto.
+
+⚠️ Nota: nell’oggetto il nome è "Luca" ma nell’output c’è "Marco 19 anni" → controlla bene i dati.
+
+🔥 ESERCIZIO 2 – Sconto
+
+Formula:
+
+prezzoFinale = prezzo - (prezzo * sconto / 100)
+
+
+Poi stampi con:
+
+console.log("Il prezzo finale di " + prodotto.nome + " è: " + prezzoFinale)
+
+🔥 ESERCIZIO 3 – Funzione maggiorenne
+
+Devi creare:
+
+function verificaEta(eta) { }
+
+
+Dentro:
+
+Se eta >= 18 → messaggio maggiorenne
+
+Altrimenti → minorenne
+
+Poi la usi così:
+
+verificaEta(persona1.eta)
+
+🔥 ESERCIZIO 4 – IVA + controllo tipi
+
+Qui vogliono vedere se sai:
+
+Convertire stringhe in numeri → Number() oppure parseFloat()
+
+Controllare se è un numero → isNaN()
+
+Formula IVA:
+
+totale = imponibile + (imponibile * ivaPercento / 100)
+
+🔥 ESERCIZIO 5 – Login
+
+Logica:
+
+if (inputUser === account.username && inputPass === account.password)
+
+
+Se falso:
+
+account.tentativi++
+
+
+Poi stampi sempre l’oggetto.
+
+🔥 ESERCIZIO 6 – Partita
+
+Probabilità 50%:
+
+if (Math.random() < 0.5)
+
+
+Incrementi uno dei due punteggi.
+
+Poi confronti:
+
+if (squadra1.punteggio > squadra2.punteggio)
+
+🔥 ESERCIZIO 7 – POP BANG
+
+Numeri 1–25:
+
+for (let i = 1; i <= 25; i++)
+
+
+Multiplo:
+
+i % 4 === 0
+i % 6 === 0
+
+
+Prima controlli 4 e 6 insieme.
+
+🔥 ESERCIZIO 8 – Carrello
+
+Sommi:
+
+carrello.prodotto1.prezzo
+
+
+Totale → poi:
+
+totale - (totale * 15 / 100)
+
+🔥 ESERCIZIO 9 – Dado probabilità
+
+Usa:
+
+let r = Math.random()
+
+
+Regola:
+
+r < 0.6 → Successo
+
+r < 0.9 → Fallimento
+
+altrimenti → Critico
+
+🔥 ESERCIZIO 10 – Menu
+
+Controllo:
+
+if (!menu[giorno])
+
+
+Caso speciale:
+
+if (giorno === "venerdi")
+
+
+Altrimenti costruisci stringa con:
+
+menu[giorno].primo
+
+🎯 COME STUDIARE ORA (veloce)
+
+Non fare tutti insieme.
+
+Fai:
+
+Oggetti (1, 2, 8)
+
+Funzioni + if (3, 4, 5)
+
+Cicli + random (6, 7, 9)
+
+Oggetti dinamici (10)
+
+Se vuoi ottimizzare al massimo i messaggi:
+
+Nel prossimo scrivimi:
+
+Facciamo 1, 3 e 7 insieme passo passo
+
+E li facciamo concentrati
