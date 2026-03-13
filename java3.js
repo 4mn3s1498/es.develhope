@@ -229,19 +229,3 @@
 
 // console.log(names.join("-"));
 
-// ESERCIZIO 2
-
-// Un negozio ha una lista di prodotti:
-
-const prodotti = [
-  { nome: "Maglietta", prezzo: 20 },
-  { nome: "Scarpe", prezzo: 80 },
-  { nome: "Cappello", prezzo: 15 },
-  { nome: "Giacca", prezzo: 120 },
-];
-
-// - Crea un nuovo array contenente solo i prodotti con prezzo superiore a 50.
-// - Stampa il nuovo array.
- let prodottiNew = prodotti.filter((prodotto)=> prodotto.prezzo >= 50  ) 
- console.log(prodottiNew)
- prodotti.keys

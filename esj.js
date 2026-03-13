@@ -155,3 +155,4 @@ const menu = {
 //  -Se il giorno è "venerdi", restituisce "Il ristorante è chiuso".
 //  -Se il giorno non è valido, restituisce "Giorno non valido".
 //  -Testa la funzione con diversi giorni della settimana e stampalo.
+
