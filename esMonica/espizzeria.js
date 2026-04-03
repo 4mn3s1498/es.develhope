@@ -155,12 +155,31 @@ let giaInserito= false
      clienti.push(cliente)
   return cliente}
 }
-console.log(addCliente({ id: "c4", nome: "Amin", vip: false } ))
+// console.log(addCliente({ id: "c4", nome: "Amin", vip: false } ))
 
 // 5. Crea una funzione che accetti come paramtro un clienteId e un menuId e aggiunga un nuovo ordine per quel cliente con
 // una porzione di quel menu, applicando automaticamente lo sconto VIP se il cliente è VIP. La funzione deve restituire
 //  il nuovo ordine creato.
+function pippo(clienteId, menuId){
+let client= clienti.find((c)=> c.id === clienteId)
+let menuu= menu.find((m)=> m.id === menuId)
+let nuovoOrdine = {
+  clienteId: clienteId,
+  items: [{ menuId: menuu.id, qty: 1 }],
+  totale: menuu.prezzo
+};
+if(client.vip){
+   let sconto = nuovoOrdine.totale * regole.scontoVip
+    nuovoOrdine.totale=nuovoOrdine.totale - sconto
+  }
+  return nuovoOrdine
+
+}
+// console.log(pippo("c1","m2"))
+// console.log(pippo("c2","m3"))
 
 // 6. Crea una funzione riepilogo che restituisca un oggetto con il totale incassato, il numero di ordini effettuati
 // e il menu più venduto (quello con più porzioni vendute).
-
+function pluto(){
+  
+}
